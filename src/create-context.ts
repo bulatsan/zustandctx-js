@@ -15,7 +15,7 @@ export const createContext = <
   type Provider = React.FC<
     {
       createStore: () => Store;
-      children: React.ReactNode;
+      children?: React.ReactNode | undefined;
     } & Record<string, unknown>
   >;
 
